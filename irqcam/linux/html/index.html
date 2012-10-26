@@ -1,0 +1,33 @@
+<html>
+<head>
+<script type="text/javascript">
+<!--
+function holdUp()
+{
+   refreshFreq=1;
+   setTimeout("freshPic()", refreshFreq*1000);
+}
+
+function freshPic()
+{
+   var currentPath=document.campic.src;
+   var trimmedPath=new Array();
+   trimmedPath=currentPath.split("?");
+   document.campic.src = trimmedPath[0] + "?" + Math.random();
+   holdUp();
+}
+
+// -->
+</script>
+<style type="text/css">
+body {
+   text-align: center;
+   background-color: black;
+}
+</style>
+<title>irq42</title>
+</head>
+<body onLoad="holdUp()">
+<img src="/tmp/irq42.jpg" alt="irq42" title="irq42" name="campic" />
+</body>
+</html>

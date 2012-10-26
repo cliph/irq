@@ -1,0 +1,11 @@
+macbin="./imagesnap -q"
+linbin="vgrabbj -d /dev/video0  -i vga -q100 -D0 -f "
+date=`date +%d%m%y%H%M%S`
+outdir=~/irqcam/
+archive=~/irqcam/archive
+name=irq42
+interval=1
+datefile=$name_$date.jpg
+namefile=$name.jpg
+
+echo "Config Loaded."
