@@ -9,7 +9,7 @@
 from twitter import *
 
 # create twitter API object
-twitter = Twitter()
+twitter=twitter()
 
 # perform a basic search 
 # twitter API docs: https://dev.twitter.com/docs/api/1/get/search
