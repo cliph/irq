@@ -1,0 +1,13 @@
+Day changed to 31 Oct 2012
+06:19:02 <klogs> 
+06:19:07 <klogs> Specs
+06:19:07 <klogs> 1. A non zero list of hash tags are defined, known as #hashtags for the rest of the document.
+06:19:11 <klogs> 2. The program polls twitter for tweets tagged with #hashtags and stores them locally.
+06:19:14 <klogs> 3. The program attempts to follow any links in the tweets from 2. and grab any media associated. 
+06:19:17 <klogs> 4. The program polls instagram for pictures tagged with #hashtags and stores them locally.
+06:19:20 <klogs> 5. The program displays these tweets and pics sequentially, with a configurable cycle time.
+06:19:23 <klogs> 6. The program may poll irc channels for content when new content is under a threshold
+06:19:26 <klogs> 7. The program may poll a local cache of asciipr0n for display when new content is under a threshold.
+06:19:30 <klogs> 8. The program may poll a local cache of irq related pics for display when new content is under a threshold.
+06:19:33 <klogs> 9. The program runs for 5 hours, without being denied access from any sites it takes data from.
+
