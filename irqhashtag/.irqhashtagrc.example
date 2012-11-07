@@ -1,0 +1,34 @@
+twitter_user=
+twitter_pass=
+
+insta_clientid=
+
+twitter_script=twitterstream.sh
+insta_script=instapoll.sh
+
+doinsta=1
+dotwitter=1
+
+# hashtags="cheese football sandy"
+# hashtags="sandy"
+# hashtags="photo"
+# hashtags="cheese"
+# hashtags="cheers"
+# hashtags="starbucks cheese"
+# hashtags="thanksgiving america"
+hashtags="vote obama romney"
+
+poll_interval=3  # minutes
+
+images_on_page=20
+imagedir=images
+
+instalog=insta.log
+twitterlog=twitter.log
+
+processedlog=processed.log
+
+outputlog=output.log
+
+frontend=pictures
+
