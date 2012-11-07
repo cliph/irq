@@ -15,7 +15,7 @@ for url in `cat processed.log|grep ^http`; do
 		echo "Downloading $url"
 		curl -s --remote-name $url
 		cd ..
-		echo "$count $url" >> $outputlog &2>1
+		echo "$count $url" >> $outputlog 
 	# else
 	# 	echo "$url has already been downloaded, skipping ..."
 	fi
