@@ -5,6 +5,8 @@ touch $outputlog
 
 count=0
 
+mkdir $imagedir 2> /dev/null
+
 for url in `cat processed.log|grep ^http`; do
 	grep -q $url $outputlog
 	if [ $? != 0 ]; then
