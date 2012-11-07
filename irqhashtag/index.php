@@ -15,7 +15,7 @@ function()
 {
 // $('#loaddiv').fadeOut('slow').load("pictures.html?"+(+new Date())).fadeIn("slow");
 $('#loaddiv').load("pictures.html?"+(+new Date()));
-}, 300);
+}, 10000);
 </script>
 
 <div id="loaddiv"> 
