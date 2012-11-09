@@ -17,7 +17,7 @@ twitter_url=https://stream.twitter.com/1/statuses/filter.json
 
 
 # echo curl -s $twitter_url -d track=\'$hashtags\' -u $twitter_user:$twitter_pass 
-# echo "curl -Ns $twitter_url -d track=\'$hashtags\' -u $twitter_user:$twitter_pass | tr -u , '\n' | grep --line-buffered media_url\" | sed -l 's/\\//g'" 
+# echo "curl -Ns $twitter_url -d track=\'$hashtags\' -u $twitter_user:$twitter_pass | stdbuf -o0 tr -u , '\n' | grep --line-buffered media_url\" | sed -l 's/\\//g'" 
 # curl -Ns $twitter_url -d track=${hashtags} -u $twitter_user:$twitter_pass | tr , '\n' | grep --line-buffered media_url\" | sed -u 's/\\//g' | cut -d\" -f4
 
 while true; do
