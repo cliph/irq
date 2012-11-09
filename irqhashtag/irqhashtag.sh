@@ -14,6 +14,7 @@ fi
 twitter() {
 	if [ $dotwitter != 0 ]; then
 		# for tag in $hashtags; do
+		echo "Running twitter"
 		for line in `cat $twitterlog`; do
 			grep -q $line $processedlog
 			if [ $? != 0 ] 
@@ -29,6 +30,7 @@ twitter() {
 
 instagram() {
 	if [ $doinsta != 0 ]; then
+		echo "Running instagram pollers"
 		for tag in $hashtags; do
 			echo "Polling instagram for $tag"
 			./$insta_script $tag >> $instalog
@@ -69,7 +71,7 @@ while true; do
 	# sort $processedlog | uniq > $processedlog.tmp && mv $processedlog.tmp $processedlog
 	./fetchfiles.sh
 	./genfiles.sh
-	sleep 20
+	sleep 5
 done
 
 

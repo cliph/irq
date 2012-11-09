@@ -18,13 +18,13 @@
 // }, 10000);
 
 $(document).ready(function () {
-    var interval = 500;   //number of mili seconds between each call
+    var interval = 2000;   //number of mili seconds between each call
     var refresh = function() {
         $.ajax({
             url: "pictures.html",
             cache: false,
             success: function(html) {
-                $('#loaddiv').html(html);
+                $('#loaddiv').fadeIn('slow').html(html);
                 setTimeout(function() {
                     refresh();
                 }, interval);
